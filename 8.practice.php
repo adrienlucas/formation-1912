@@ -10,8 +10,16 @@
 // and return true or false based on the comparison
 
 class Member {
-    public function __construct()
+    public function __construct(
+        public string $login,
+        public string $password,
+        public int $age
+    ) {
+    }
+
+    public function auth(string $login, string $password): bool
     {
+        return $this->login === $login && $this->password === $password;
     }
 }
 

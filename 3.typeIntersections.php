@@ -14,7 +14,6 @@ class B {
     }
 }
 
-
 function doSomething(A&B $someVariable): void
 {
     // some logic ...
